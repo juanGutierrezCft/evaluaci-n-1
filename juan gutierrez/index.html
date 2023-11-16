@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario_nombre_apellido</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/estilos.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <img id="img_1" src="./assets/imagenes/logo_cft_estatal.jpeg" alt="logo_cft" width="100">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="https://cftestatalaricayparinacota.cl"><strong>Inicio</strong></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://cftestatalaricayparinacota.cl/admision-2/">Admisión</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+                            Carreras
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="https://cftestatalaricayparinacota.cl/tecnico-de-nivel-superior-en-informatica-y-aplicaciones-tecnologicas/">TNS en Informática</a></li>
+                            <li><a class="dropdown-item" href="https://cftestatalaricayparinacota.cl/tecnico-de-nivel-superior-en-proyectos-electricos-de-distribucion/">TNS de Proyectos Eléctricos de Distribución</a></li>
+                            <li><a class="dropdown-item" href="https://cftestatalaricayparinacota.cl/tecnico-de-nivel-superior-en-fabricacion-y-montaje-de-estructuras-metalicas/">TNS en Fabricación y Montaje de Estructuras Metálicas</a></li>
+                            <li><a class="dropdown-item" href="https://cftestatalaricayparinacota.cl/tns-en-obras-civiles/">TNS en Obras Civiles</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Contáctanos</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Busca tu carrera" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>    
+    <img src="./assets/imagenes/portada.jpeg" class="image-horizontal rounded mx-auto d-block" alt="portada_cft">
+    <p class="parrafo">Si tienes dudas, utiliza nuestro formulario de contacto para realizar las preguntas que necesites. Recuerda que estamos aquí para ayudarte y ofrecerte una educación de calidad.</p>
+        <h1 class="text-center">Formulario</h1>
+        <form action="#" method="POST">
+            <div class="mx-auto" style="max-width: 400px;">
+                <div class="mb-3">
+                    <label for="nombre" class="form-label"></label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre">
+                    <span id="validar_nombre" style="color: red;"></span>
+                </div>
+                <div class="mb-3">
+                    <label for="apellido" class="form-label"></label>
+                    <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Apellido">
+                    <span id="validar_apellido" style="color: red;"></span>
+                </div>
+                <div class="mb-3">
+                    <label for="telefono" class="form-label"></label>
+                    <input type="text" class="form-control" id="telefono" name="telefono" placeholder="Teléfono">
+                    <span id="validar_telefono" style="color: red;"></span>
+                </div>
+                <div class="mb-3">
+                    <label for="carrera" class="form-label"></label>
+                    <input type="text" class="form-control" id="carrera" name="carrera" placeholder="Carrera">
+                    <span id="validar_carrera" style="color: red;"></span>
+                </div>
+                <div class="mb-3">
+                    <label for="edad" class="form-label"></label>
+                    <input type="text" class="form-control" id="edad" name="edad" placeholder="Edad">
+                    <span id="validar_edad" style="color: red;"></span>
+                </div>
+                <div class="mb-3">
+                    <label for="mensaje" class="form-label"></label>
+                    <textarea class="form-control" id="mensaje" name="mensaje" placeholder="Mensaje"></textarea>
+                    <span id="validar_mensaje" style="color: red;"></span>
+                </div>
+                <div class="mb-3">
+                    <button class="btn btn-primary btn-block" onclick=Datos() type="submit" style="width: 100%;">Enviar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/scripts.js"></script>
+</body>
+</html>

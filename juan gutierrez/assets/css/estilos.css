@@ -1,0 +1,24 @@
+body {
+    font-family: 'Comic Sans MS';
+}
+
+.image-horizontal {
+    width: 100%;
+    max-height: 400px;
+}
+
+.nav-link {
+    color: black;
+}
+
+.nav-link:hover {
+    color: blue;
+}
+
+.parrafo {
+    text-align: center;
+}
+
+.container {
+    text-align: center;
+}
